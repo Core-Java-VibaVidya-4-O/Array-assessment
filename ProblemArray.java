@@ -1,23 +1,18 @@
-import java.util.Arrays;
-import java.util.Scanner;
-
+import java.util.*;
 public class ProblemArray {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+    public static void main(String args[]) {
 
-        int a[] = new int[n];
+        int[] a = new int[n];
+
         int sum=0;
+        int sumOfNums= n*(n+1)/2;       //can't be change
 
-        for (int i=0; i<a.length; i++) {
+        for (int i=0; i<n; i++) {
             a[i] = sc.nextInt();
-            sum = sum + a[i];
+            sum = sum+a[i];
         }
 
-        a[n-1]  = sum;
+        System.out.println(sumOfNums-sum);
 
-        System.out.println(Arrays.toString(a));
-
-        sc.close();
     }
 }
