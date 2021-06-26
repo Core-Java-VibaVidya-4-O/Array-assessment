@@ -1,5 +1,7 @@
-Make some changes in Problem.java file:
-1. Multiply all elements in array
-2. Replace multiplication value at 0th index
+Make some changes in ProblemArray.java file:
+1. Output 1 missing number within n bound
+2. Do not change the formula of n natural numbers
 3. Example, 
-a={1, 2, 3, 4} ===> a={24, 2, 3, 4};
+    Input n size = 10
+    Input elements = 1,2,3,5,6,7,8,9,10
+    Output = 4
