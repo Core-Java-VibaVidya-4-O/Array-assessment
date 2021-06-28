@@ -1,23 +1,23 @@
-import java.util.Arrays;
-import java.util.Scanner;
 
-public class ProblemArray {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+import java.util.*;
 
-        int a[] = new int[n];
-        int mul=1;
+   public class Missingnumber{
+   public static void main(String[] args) {
 
-        for (int i=0; i<a.length; i++) {
-            a[i] = sc.nextInt();
-            mul=mul*a[i];
-        }
+   int sum = 0 ;
 
-        a[0]  = mul;
+   Scanner sc = new Scanner(System.in);
+   System.out.println("enter the value of x");
+   int x = sc.nextInt();
+   System.out.println("enter " + ( x-1 ) + " elements of array");
+   int[] b = new int[x-1];
 
-        System.out.println(Arrays.toString(a));
+   for(int i=0;i<b.length;i++){
+   b[i] = sc.nextInt();
+   sum = sum+b[i];
+   }
 
-        sc.close();
-    }
-}
+   int sumofnatnum= x*(x+1)/2;
+   System.out.println("The missing number ="+ ( sumofnatnum - sum));
+   }
+   }
